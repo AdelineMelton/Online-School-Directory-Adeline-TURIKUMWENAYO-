@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Comment form design</title>
+</head>
+<body bgcolor="whitesmoke">
+	<center>
+	<h1 style="font-family: Bookman Old Style;"><u>Welcome to online school Directory</u></h1>
+	<a href="Home.html"target="-parent">Home</a>
+	<a href="About.html">About us</a>
+	<a href="contact.html">Contact Us</a>
+	<a href="Course.html">Online Courses</a>
+	<a href="Comment.html">Comments</a>
+	<a href="index.html">Login</a>
+	<a href="index.html">Logout</a>
+	<style >
+			a:link, a:visited 
+	{
+  background-color: ghostwhite;
+  color: black;
+  border: 0px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: fontawesome;
+}
+a:hover,a:active
+ {
+  background-color: #4CAF50;
+  color: white;
+  font-family: fontawesome;
+}
+.comment-box
+{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 500px;
+}
+.comment-box h2
+{
+font-size: 50px;
+margin-bottom: 15px;
+}
+.comment-box input
+{
+	width: 100%;
+	height: 60%;
+	padding: 0 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border-radius: 1px solid grey;
+}
+.comment-box input:focus
+{
+border:1px solid black;
+outline: 0;
+}
+.comment-box textarea
+{
+	width: 100%;
+	height: 150px;
+	padding: 15px 20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+.comment-box textarea:focus
+{
+	border: 1px solid black;
+	outline: 0;
+}
+.comment-box button
+{
+	border: 0;
+padding:10px 30px ;
+background: grey;
+font-size: 18px;
+border-radius: 5px;
+color: white;
+}
+.comment-box button:hover
+{
+	background-color: #4CAF50;
+}
+	</style>
+	<div class="comment-box">
+	<h2 style="font-family:fontawesome;font-weight: initial;">Comments</h2>
+	<form action="#">
+		<input type="text" name="fullname" placeholder="Enter your fullname">
+		<input type="Email" name="Email" placeholder="email address">
+		<textarea name="Comment"placeholder="Type your Comment here"></textarea>
+		<button type="submit">Submit comment</button>
+	</form>
+</div>
+</center>
+</body>
+</html>
